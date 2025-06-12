@@ -9,12 +9,12 @@ import path from "path";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resovle: {
-    // alias: {
-    //   "@": path.resolve(__dirname, "/src"),
-    // }
     alias: {
-      src: "/src",
+      "@": path.resolve(__dirname, "/src"),
     }
+    // alias: {
+    //   src: "/src",
+    // }
   },
   // base url for github pages
   base: "ManuelGarcia-Portfolio"

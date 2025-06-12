@@ -17,5 +17,5 @@ export default defineConfig({
     }
   },
   // base url for github pages
-  base: "ManuelGarcia-Portfolio"
+  base: "/ManuelGarcia-Portfolio"
 })

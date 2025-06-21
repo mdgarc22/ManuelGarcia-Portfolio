@@ -4,10 +4,74 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url('/public/images/smoke.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #f3f4f6;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-zeronero: "Zeronero"; 
+  --font-uniqueen: "Uniqueen";
+  --font-cinzel: "Cinzel";
+  --font-bodrum: "Bodrum";
+  --font-bodoni: "Bodoni";
+  --font-nevrada: "Nevrada";
+}
+
+@layer base{
+    :root {
+    --color-*: initial;
+    --color-navy: #293949;
+    --color-gold:#b9ab9a;
+    --color-black:#2F2F30;
+    --color-gray:#BCB8B5;
+  }
+  
+  @font-face {
+    font-family: 'Zeronero';
+    src: url('/public/fonts/zeronero-regular.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Uniqueen';
+    src: url('/public/fonts/Uniqueen Bold.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cinzel';
+    src: url('/public/fonts/Cinzel-Regular.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Bodrum';
+    src: url('/public/fonts/Nodrum.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Bodoni';
+    src: url('/public/fonts/Bodoni-Bold.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Nevrada';
+    src: url('/public/fonts/Nevrada.ttf')  format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 
 @layer utilities {
   @keyframes blink {
@@ -50,7 +114,7 @@ html, body {
 }
 
 
-  .animate-blink {
+  /* .animate-blink {
     animation: blink 0.8s step-end infinite;
   }
 
@@ -65,7 +129,7 @@ html, body {
 
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
-  }
+  } */
 }
 
 .reveal {
@@ -87,4 +151,26 @@ html, body {
 .block{
   margin-left: auto;
   margin-right: auto;
+}
+
+#videoBG {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover
+}
+
+.text-header{
+ color:#b9ab9a;
+}
+
+.img-header{
+  filter: invert(76%) sepia(12%) saturate(389%) hue-rotate(353deg) brightness(90%) contrast(88%);
+}
+
+.text-sideways {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
 }

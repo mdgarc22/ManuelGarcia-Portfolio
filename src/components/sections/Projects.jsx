@@ -129,7 +129,7 @@ export const Projects = () => {
 
         <div className="text-center mt-12">
           <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2 bg-navy p-1.5 px-3 rounded-xl text-white"
+            className="button bg-[var(--color-navy)] w-fit flex items-center mx-auto gap-2 bg-navy p-1.5 px-3 rounded-xl text-white transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
             target="_blank"
             href="https://github.com/mdgarc22"
           >

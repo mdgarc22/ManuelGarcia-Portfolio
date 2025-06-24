@@ -143,7 +143,7 @@ export const Contact = () => {
 
               <button
                 type="submit"
-                className="max-w-2xl bg-gold text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                className="max-w-2xl bg-[var(--color-gold)] text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(255,255,255,.2)]"
               >
                 Send Message
               </button>
